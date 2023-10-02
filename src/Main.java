@@ -16,7 +16,19 @@ public class Main {
                 System.out.println("congratulations!");
                 System.out.println("guess: " + tries);
                 break;
+            }else if (ans.equalsIgnoreCase("y")) {
+                System.out.println("thanks for playing");
+                System.out.println("guess: " + tries);
+                break;
+            } else if (ans.equalsIgnoreCase("n")) {
+                continue;
             }
-
+            else {
+                System.out.println("try again");
+                System.out.println("do you want to quit? (y/n)");
+            }
         }
+
+
+    }
 }
